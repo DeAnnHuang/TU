@@ -52,15 +52,11 @@ gulp.task('begin', ['mkdir', 'Library']);
 gulp.task('scripts', function() {
          gulp.src([
             "assets/Library/jquery.min.js",
-            "assets/Library/TweenMax.min.js",
-            "assets/Library/ScrollMagic.min.js",
-            "assets/Library/animation.gsap.min.js",
-            "assets/Library/debug.addIndicators.min.js",
             "assets/js/*.js"
         ])
         .pipe(plumber())
-        .pipe(concat('all.js'))
-        .pipe(uglify())
+        // .pipe(concat('all.js'))
+        // .pipe(uglify())
         .pipe(gulp.dest('build/js'))
         .pipe(livereload())
         .pipe(notify("js complete!"));

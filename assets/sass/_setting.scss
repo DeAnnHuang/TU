@@ -1,0 +1,40 @@
+@import "bootstrap-compass";
+@import "bootstrap-custom";
+
+// ==== font-awesome ====//
+$fa-font-path:"../fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+.icon-user {
+    @extend .fa;
+    @extend .fa-user;
+}
+
+// ==== font-awesome ====//
+
+// ====font-size===== //
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6,
+p {
+    font-size: 15px;
+}
+
+// ====font-size===== //
