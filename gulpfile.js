@@ -50,28 +50,39 @@ gulp.task('begin', ['mkdir', 'Library']);
 
 //js concat
 gulp.task('scripts', function() {
-         gulp.src([
-            "assets/Library/jquery.min.js",
+    gulp.src([
             "assets/js/*.js"
         ])
         .pipe(plumber())
-        // .pipe(concat('all.js'))
-        // .pipe(uglify())
+        .pipe(concat('all.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('build/js'))
         .pipe(livereload())
         .pipe(notify("js complete!"));
 });
 
+//Library concat
+gulp.task('libraryJS', function() {
+    gulp.src([
+            "assets/Library/*.js",
+        ])
+        .pipe(plumber())
+        .pipe(gulp.dest('build/js'))
+        .pipe(livereload())
+        .pipe(notify("library js complete!"));
+});
+
 //Style Tasks
 //css uglifies
 gulp.task('styles', function() {
-    gulp.src('assets/sass/*.scss')
+    gulp.src('assets/sass/**/*.scss')
         .pipe(plumber())
         .pipe(compass({
             css: 'build/css',
             sass: 'assets/sass',
             style: 'compressed',
             font: 'build/fonts',
+            image: 'build/img',
             comments: false
         }))
         .pipe(livereload())
@@ -104,12 +115,13 @@ gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('*.html', ['html']);
     gulp.watch('assets/img/*', ['imgmin']);
+    gulp.watch('assets/Library/*.js', ['libraryJS']);
     gulp.watch('assets/js/*.js', ['scripts']);
     gulp.watch('assets/sass/*.scss', ['styles']);
     gulp.watch(['./*.html', './build/**/*'], ['zip']);
 });
 
-gulp.task('default', ['html', 'scripts', 'styles', 'imgmin', 'Library', 'watch']);
+gulp.task('default', ['html', 'scripts', 'libraryJS', 'styles', 'imgmin', 'Library', 'watch']);
 
 
 // ======================================================== //

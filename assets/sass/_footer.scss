@@ -1,0 +1,78 @@
+.footer {
+    margin: 10px;
+    background: #0f1633;
+    color: #fff;
+    p,
+    i {
+        vertical-align: middle;
+    }
+    .wrap {
+        padding: 20px 5vw;
+    }
+    .page-top {
+        border-bottom: 1px solid #fff;
+        color: $hightlight;
+        text-align: right;
+        cursor: pointer;
+        padding-bottom: 10px;
+        &:before {
+            content: 'PAGE TOP';
+        }
+    }
+    .group {
+        @include Flex(flex-end, space-between);
+        padding: 20px;
+        .left {
+            p {
+                margin-top: 10px;
+            }
+        }
+        .right {
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+                color: #fff;
+                &:hover {
+                    color: #ccc;
+                }
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .footer {
+    	position: relative;
+        .page-top {
+        	position: absolute;
+        	top:-32px;
+        	right:10px;
+            border: none;
+            i {
+                color: #fff;
+                background: $hightlight;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+            }
+            &:before {
+                content: '';
+            }
+        }
+        .group {
+            @include Flex(center, center);
+            @include flex-direction(column);
+            text-align: center;
+            .right {
+                p {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
