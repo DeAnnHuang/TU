@@ -50,8 +50,10 @@ header {
             margin-left: 5px;
             background: no-repeat url($image);
             background-size: cover;
-            width: image-width($image);
-            height: image-height($image);
+            // width: image-width($image) ;
+            // height: image-height($image);
+            width: 147px;
+            height: 36px;
         }
         ul {
             margin-right: 5px;

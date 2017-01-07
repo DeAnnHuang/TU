@@ -23,6 +23,9 @@
         @include Flex(flex-end, space-between);
         padding: 20px;
         .left {
+            img{
+                width: 110px;
+            }
             p {
                 margin-top: 10px;
             }
