@@ -7,7 +7,11 @@ var gulp = require('gulp'),
     mkdirp = require('mkdirp'),
     zip = require('gulp-zip'),
     plumber = require('gulp-plumber'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    fs = require('fs'),
+    path = require('path'),
+    es = require('event-stream'),
+    rename = require('gulp-rename');
 
 //create direction
 gulp.task('mkdir', function() {
@@ -48,17 +52,34 @@ gulp.task('begin', ['mkdir', 'Library']);
 
 //Scripts Tasks
 
+var scriptsPath = './assets/js/';
+
+function getFolders(dir) {
+    return fs.readdirSync(dir)
+        .filter(function(file) {
+            return fs.statSync(path.join(dir, file)).isDirectory();
+        });
+}
+
 //js concat
 gulp.task('scripts', function() {
-    gulp.src([
-            "assets/js/*.js"
-        ])
-        .pipe(plumber())
-        .pipe(concat('all.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('build/js'))
-        .pipe(livereload())
-        .pipe(notify("js complete!"));
+
+    var folders = getFolders(scriptsPath);
+
+    var tasks = folders.map(function(folder) {
+        return gulp.src(path.join(scriptsPath, folder, '/*.js'))
+            .pipe(plumber())
+            .pipe(concat(folder + '.js'))
+            .pipe(gulp.dest(scriptsPath))
+            .pipe(uglify())
+            .pipe(rename(folder + '.min.js'))
+            .pipe(gulp.dest('build/js'))
+            .pipe(livereload())
+            .pipe(notify("js complete!"));
+    });
+
+    return es.concat.apply(null, tasks);
+
 });
 
 //Library concat
@@ -116,7 +137,7 @@ gulp.task('watch', function() {
     gulp.watch('*.html', ['html']);
     gulp.watch('assets/img/*', ['imgmin']);
     gulp.watch('assets/Library/*.js', ['libraryJS']);
-    gulp.watch('assets/js/*.js', ['scripts']);
+    gulp.watch('assets/js/**/*.js', ['scripts']);
     gulp.watch('assets/sass/*.scss', ['styles']);
     gulp.watch(['./*.html', './build/**/*'], ['zip']);
 });

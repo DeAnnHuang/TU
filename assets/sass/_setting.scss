@@ -72,6 +72,31 @@ $blue:#182350;
     }
 }
 
+.warning {
+    color: #fe5a65;
+    font-style: italic;
+}
+
+.btn {
+    border: 1px solid $hightlight;
+    border-radius: 0;
+    color: $hightlight;
+    &:hover {
+        color: #fff;
+        background: $hightlight;
+    }
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $hightlight;
+    &:focus {
+        outline: none;
+    }
+}
+
+
 @media screen and (max-width: 414px) {
     .block-title {
         font-size: 22px;
