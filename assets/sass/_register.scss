@@ -29,6 +29,21 @@
      .breadcrum {
          color: #fff;
      }
+     .input-group {
+         color: $hightlight;
+         margin: 25px 0;
+         font-size: 18px;
+         h5 {
+             display: inline-block;
+             width: 90px;
+             &.vertical-align {
+                 vertical-align: text-bottom;
+             }
+         }
+         input {
+             color: #000;
+         }
+     }
      .register {
          background: #f6f6f6;
          padding: 40px;
@@ -36,7 +51,17 @@
          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
          width: 100%;
          margin-bottom: 40px;
+         .tip {
+             margin-left: 10px;
+             color: #898f92;
+             i {
+                 color: #4579e3;
+             }
+         }
          .step1 {
+             &.hide {
+                 display: none;
+             }
              @include Flex(flex-start, flex-start);
              .pro-pic {
                  margin: 50px 80px;
@@ -69,29 +94,9 @@
                  }
              }
              .input-group {
-                 color: $hightlight;
-                 margin: 25px 0;
-                 font-size: 18px;
                  .ms-parent.form-control {
                      border-top-left-radius: 4px;
                      border-bottom-left-radius: 4px;
-                 }
-                 h5 {
-                     display: inline-block;
-                     width: 90px;
-                     &.vertical-align {
-                         vertical-align: text-bottom;
-                     }
-                 }
-                 input {
-                     color: #000;
-                 }
-                 .tip {
-                     margin-left: 10px;
-                     color: #898f92;
-                     i {
-                         color: #4579e3;
-                     }
                  }
                  .input-group {
                      margin: 0;
@@ -110,6 +115,95 @@
              .next_btn {
                  float: right;
                  padding: 15px 60px;
+             }
+         }
+         .step2 {
+             &.hide {
+                 display: none;
+             }
+             .step2wrap {
+                 width: 25vw;
+                 margin: 0 auto;
+                 overflow: auto;
+                 h4 {
+                     margin-top: 100px;
+                     color: $hightlight;
+                     text-align: center;
+                 }
+                 input {
+                     margin: 40px 0;
+                 }
+                 .tip {
+                     margin-left: 0;
+                     text-align: left;
+                 }
+                 .resend {
+                     float: right;
+                     color: $gray;
+                     margin-top: 40px;
+                     i {
+                         vertical-align: text-top;
+                     }
+                     &:hover {
+                         color: $hightlight;
+                         text-decoration: underline;
+                     }
+                 }
+             }
+             .next_btn {
+                 float: right;
+                 padding: 15px 60px;
+                 margin: 100px;
+             }
+         }
+         .step3 {
+             &.hide {
+                 display: none;
+             }
+             .step3wrap {
+                 width: 80%;
+                 margin: 0 auto;
+                 h4 {
+                     margin-top: 100px;
+                     color: $hightlight;
+                     text-align: center;
+                 }
+                 .input-group {
+                     h5 {
+                         text-align: right;
+                         margin-right: 20px;
+                         width: 300px;
+                     }
+                 }
+             }
+             .next_btn {
+                 float: right;
+                 padding: 15px 60px;
+                 margin: 100px;
+             }
+         }
+         .step4 {
+            &.hide{
+                display: none;
+            }
+             h4 {
+                 margin-top: 100px;
+                 color: $hightlight;
+                 text-align: center;
+             }
+             .row {
+                 text-align: center;
+                 margin: 40px 0 100px 0;
+             }
+             a {
+                 margin: 0 30px;
+                 color: $gray;
+                 i {
+                     vertical-align: baseline;
+                 }
+                 &:hover {
+                     color: $hightlight;
+                 }
              }
          }
      }
@@ -148,6 +242,58 @@
                      float: none;
                      display: block;
                      margin: 40px 0;
+                 }
+             }
+             .step2 {
+                 .step2wrap {
+                     width: 230px;
+                     h4 {
+                         margin-top: 60px;
+                     }
+                 }
+                 .next_btn {
+                     float: none;
+                     display: block;
+                     margin: 60px 0 40px 0;
+                 }
+             }
+             .step3 {
+                 .step3wrap {
+                     width: 100%;
+                     min-width: 280px;
+                     h4 {
+                         margin-top: 60px;
+                     }
+                     .input-group {
+                         font-size: 16px;
+                         h5 {
+                             font-size: 16px;
+                             width: 90px;
+                             margin: 0;
+                             text-align: left;
+                             b {
+                                 display: block;
+                                 margin-left: 20px;
+                             }
+                         }
+                     }
+                     .tip {
+                         display: block;
+                         margin-left: 90px;
+                     }
+                 }
+                 .next_btn {
+                     float: none;
+                     display: block;
+                     margin: 60px 0 40px 0;
+                 }
+             }
+             .step4 {
+                 h4 {
+                     margin-top: 60px;
+                 }
+                 a{
+                    margin: 0 20px;
                  }
              }
          }

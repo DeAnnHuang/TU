@@ -1,19 +1,21 @@
-.bg1{
-	background-image: url('http://placehold.it/1440x400');
-	height: 400px;
-	background-position: center;
-	img{
-		display: block;
-		margin: 0 auto;
-		width:300px;
-		padding-top: 100px;
-	}
+.bg1 {
+    background: url('../img/bg/bg.jpg') no-repeat;
+    height: 350px;
+    background-position: center;
+    background-size: 100% auto;
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        padding-top: 100px;
+    }
 }
 
 @media screen and (max-width: 414px) {
-	.bg1{
-		img{
-			width: 180px;
-		}
-	}
+    .bg1 {
+        background-size: auto 100%;
+        img {
+            width: 180px;
+        }
+    }
 }

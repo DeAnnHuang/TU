@@ -110,9 +110,9 @@
     <div class="register-wrap">
         <p class="breadcrum"><span class="rhombus"></span> 註冊頁面</p>
         <div class="register">
-            <div class="step1">
+            <div class="step1 hide">
                 <div class="pro-pic">
-                    <img src="http://placehold.it/150x150" class="img-circle" id="upload-img">
+                    <img src="build/img/bg/propic.jpg" class="img-circle" id="upload-img">
                     <button class="file-btn btn">
                         <span>上傳大頭貼</span>
                         <input type="file" id="upload" />
@@ -192,7 +192,55 @@
                             <input type="checkbox" required style="margin-top: 7px"> <small>您是否同意火把教會假文假文個資保護法您是否同意火把教會假文假文個資保您是否同意火把教會假文假文個資保護法您是否同意火把教會假文假文個資保您是否同意火把教會假文假文個資保護法。</small>
                         </label>
                     </div>
-                    <div class="btn next_btn">下一步</div>
+                    <a href="#">
+                        <div class="btn next_btn">下一步</div>
+                    </a>
+                </div>
+            </div>
+            <div class="step2 hide">
+                <div class="step2wrap">
+                    <h4>輸入您收到的驗證碼</h4>
+                    <input type="text" name="security-code" class="form-control">
+                    <span class="tip"><i class="fa fa-info-circle"></i> 系統將於30秒內傳送一組驗整碼至您的手機，如果30秒後尚未收到，可重新寄送。</span>
+                    <a href="#">
+                        <div class="resend"> <i class="fa fa-arrow-right" aria-hidden="true"></i> 重寄驗證碼</div>
+                    </a>
+                    <div class="clearfix"></div>
+                </div>
+                <a href="#">
+                    <div class="btn next_btn">下一步，設定密碼</div>
+                </a>
+            </div>
+            <div class="step3 hide">
+                <div class="step3wrap">
+                    <h4>設定您的密碼</h4>
+                    <div class="input-group">
+                        <h5><span class="rhombus"></span>帳號*</h5>
+                        <input type="text" name="user-account" placeholder="輸入您的信箱">
+                    </div>
+                    <div class="input-group">
+                        <h5><span class="rhombus"></span>密碼*</h5>
+                        <input type="password" name="user-password">
+                        <span class="tip"><i class="fa fa-info-circle"></i> 請輸入至少8位數，英文或數字</span>
+                    </div>
+                    <div class="input-group">
+                        <h5><span class="rhombus"></span>再次輸<b>入密碼*</b></h5>
+                        <input type="password" name="user-password">
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="btn next_btn">儲存，完成註冊</div>
+                </a>
+            </div>
+            <div class="step4">
+                <h4>恭喜您，完成火把大學註冊！</h4>
+                <div class="row">
+                    <a href="index.html">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> 前往首頁
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> 開始登入選課
+                    </a>
                 </div>
             </div>
         </div>
@@ -219,8 +267,7 @@
 </body>
 <script src="build/js/jquery.min.js"></script>
 <script src="build/js/bootstrap.min.js"></script>
-<!-- // .dropdown-menu padding:4px 10px; -->
 <script src="build/js/register-scripts.min.js"></script>
-<script src="http://172.20.10.2:35729/livereload.js?snipver=1"></script>
+<!-- <script src="http://172.20.10.2:35729/livereload.js?snipver=1"></script> -->
 
 </html>
