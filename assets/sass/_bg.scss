@@ -1,3 +1,12 @@
+.bg {
+    @include Flex(center, center);
+    p {
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+    }
+}
+
 .bg1 {
     background: url('../img/bg/bg.jpg') no-repeat;
     height: 350px;
@@ -11,11 +20,56 @@
     }
 }
 
+.bg-container-wrap {
+    @include Flex(flex-start,
+    center);
+    @include flex-direction(column);
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: -100px;
+    .rhombus {
+        background-color: $hightlight;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        transform: rotate(45deg);
+        margin: 0 10px;
+        margin-left: 0;
+    }
+    .breadcrum {
+        color: #fff;
+    }
+    .bg-container {
+        background: #f6f6f6;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 414px) {
+    .bg {
+        p {
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+    }
     .bg1 {
         background-size: auto 100%;
         img {
             width: 180px;
+        }
+    }
+    .bg-container-wrap {
+        margin-top: -160px;
+        width: 95vw;
+        .rhombus {
+            margin: 0 5px;
+        }
+        .bg-container {
+            padding: 15px;
         }
     }
 }
