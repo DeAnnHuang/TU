@@ -4333,7 +4333,13 @@ $(function() {
     $('.upload-result').on('click', function(ev) {
         $(".popout-wrap").css('top', '-100%');
 
-        $uploadCrop.croppie('result', { type: 'canvas', size: { width: 300, height: 300 } }).then(function(resp) {
+        $uploadCrop.croppie('result', {
+            type: 'canvas',
+            size: {
+                width: 300,
+                height: 300
+            }
+        }).then(function(resp) {
             $("#upload-img").attr('src', resp);
         });
     });

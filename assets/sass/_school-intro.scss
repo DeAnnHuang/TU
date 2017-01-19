@@ -1,0 +1,75 @@
+.school-intro {
+    .title,
+    .schools_logo {
+        display: block;
+        margin: 30px auto;
+    }
+    .title {
+        height: 50px;
+        width: auto;
+    }
+    .schools_logo {
+        width: 155px;
+        height: auto;
+    }
+    p.intro {
+        width: 55%;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .map {
+        margin: 40px -40px;
+        height: 450px;
+        background-color: #d2d2d2;
+        overflow: hidden;
+    }
+    h5 {
+        color: $blue;
+    }
+    .school-card {
+        background: #fff;
+        color: #000;
+        border: 1px #f6f6f6 solid;
+        height: 110px;
+        &:hover {
+            color: #fff;
+            background: $hightlight;
+        }
+        b {
+            margin: 10px 10px 0 0;
+            display: block;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 14px;
+            i {
+                vertical-align: baseline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .school-intro {
+        p.intro {
+            width: 100%;
+            line-height: 20px;
+        }
+        .title {
+            height: 44px;
+            width: auto;
+        }
+        .schools_logo {
+            width: 155px;
+            height: auto;
+        }
+        .map {
+            margin: 40px -15px;
+        }
+        .row {
+            margin: 0;
+        }
+    }
+}
