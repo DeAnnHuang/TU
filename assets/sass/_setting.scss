@@ -60,6 +60,7 @@ body {
 $hightlight:#e7b020;
 $blue:#182350;
 $gray:#898f92;
+$red:#fe5a65;
 //commom
 //
 .block-title {
@@ -97,7 +98,6 @@ input {
     }
 }
 
-
 @media screen and (max-width: 414px) {
     .block-title {
         font-size: 22px;
@@ -108,23 +108,32 @@ i {
     vertical-align: middle;
 }
 
+.alignIn1-top-center {
+    @include Flex(flex-start, center);
+}
+
+.alignIn1-center-center {
+    @include Flex(center, center);
+}
+
 //scroll bar
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 3px;
+    height: 3px;
     opacity: 0;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.4);
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+    background: $hightlight;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(0, 0, 0, 0.4);
+    background: $hightlight;
 }

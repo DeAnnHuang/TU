@@ -1,3 +1,13 @@
+const $win = $(window),
+    $header = $('header'),
+    $logo = $('header .logo');
+
+
+$win.scroll(function() {
+    $win.width() > 414 && $header.offset().top == 0 ? $logo.css('background-color', '#fff') : $logo.css('background-color', 'transparent');
+
+})
+
 const $body = $('body'),
     $menu_wrap = $('.menu-wrap'),
     $title = $('.menu-wrap .title'),
@@ -27,3 +37,7 @@ menuClickHandle($('header .fa-book'), '選課清單', $('.menu-wrap .lists'));
 menuClickHandle($('header .fa-bell-o'), '通知', $('.menu-wrap .notice'));
 menuClickHandle($('header .fa-bars'), '選單', $('.menu-wrap .menu'));
 menuClickHandle($('.slider main .btn'), '登入', $('.menu-wrap .login'));
+
+$('.page-top').click(function() {
+    $('html,body').animate({ scrollTop: 0 }, 500);
+})

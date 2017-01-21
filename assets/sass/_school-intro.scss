@@ -23,6 +23,12 @@
         height: 450px;
         background-color: #d2d2d2;
         overflow: hidden;
+        cursor: move;
+        img {
+            left: 50%;
+            top: 0;
+            @include transform(translate(-50%, 0));
+        }
     }
     h5 {
         color: $blue;
@@ -67,9 +73,15 @@
         }
         .map {
             margin: 40px -15px;
+            height: 320px;
+            img {
+                left: -400px;
+                top: -150px;
+                @include transform(translate(0, 0));
+            }
         }
-        .row {
-            margin: 0;
-        }
+    }
+    .row {
+        margin: 0;
     }
 }
