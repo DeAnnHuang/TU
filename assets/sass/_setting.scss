@@ -61,6 +61,15 @@ $hightlight:#e7b020;
 $blue:#182350;
 $gray:#898f92;
 $red:#fe5a65;
+
+.red {
+    color: $red;
+}
+
+.light-blue {
+    color: #4579e3;
+}
+
 //commom
 //
 .block-title {
@@ -111,9 +120,11 @@ i {
 .alignIn1-top-center {
     @include Flex(flex-start, center);
 }
+
 .alignIn1-center-left {
     @include Flex(center, flex-start);
 }
+
 .alignIn1-center-center {
     @include Flex(center, center);
 }
