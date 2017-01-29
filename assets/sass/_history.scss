@@ -27,6 +27,7 @@
                     // @include flex-direction(column);
                     &.text-left {
                         @include justify-content(flex-start);
+                        text-align: left;
                     }
                 }
             }
@@ -54,6 +55,9 @@
                     &>[class*="col-"] {
                         border-top: 1px solid #bdc2c4;
                         padding: 10px;
+                        .pull-right{
+                            text-align: right;
+                        }
                     }
                     &:last-child {
                         border-bottom: 1px solid #bdc2c4;
