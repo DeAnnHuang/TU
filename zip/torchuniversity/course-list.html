@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Torch University</title>
     <link rel="shortcut icon" type="image/png" href="build/img/favicon.png" />
-    <link rel="stylesheet" href="build/css/personalAccount-style.css">
+    <link rel="stylesheet" href="build/css/courseList-style.css">
 </head>
 
 <body>
@@ -102,75 +102,57 @@
         <p>敬畏耶和華是智慧的開端;
             <br>認識至聖者便是聰明。(箴9:10)</p>
     </div>
-    <div class="bg-container-wrap personal">
-        <p class="breadcrum"><span class="rhombus"></span> 你的個人頁面</p>
-        <div class="bg-container">
-            <img src="build/img/bg/propic.jpg" class="img-circle pro-pic">
-            <div class="p-common">
-                <h2 class="p-name">王小姐</h2>
-                <div class="p-id">
-                    <p>3315123456789</p>
-                    <small>學號</small>
-                </div>
-                <div class="p-group">
-                    <p>喵星人小組</p>
-                    <small>火把小組</small>
-                </div>
-                <a href="personal-edit.html">
-                    <div class="btn edit-btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
-                </a>
-            </div>
-            <hr>
-            <div class="tabs">
-                <div class="row">
-                    <a href="personal.html">
-                        <div class="col-md-2 col-xs-4 item">個人資料頁</div>
-                    </a>
-                    <a href="semester-course.html">
-                        <div class="col-md-2 col-xs-4 item">當期課程</div>
-                    </a>
-                    <a href="history.html">
-                        <div class="col-md-2 col-xs-4 item">歷史紀錄</div>
-                    </a>
-                    <a href="system-notification.html">
-                        <div class="col-md-2 col-xs-4 item">系統通知</div>
-                    </a>
-                    <a href="personal-account.html">
-                        <div class="col-md-2 col-xs-4 item active">個人帳戶</div>
-                    </a>
-                    <a href="myAchievement.html">
-                        <div class="col-md-2 col-xs-4 item">我的成就</div>
-                    </a>
-                </div>
-            </div>
+    <div class="bg-container-wrap course-list-wrap">
+        <p class="breadcrum"><span class="rhombus"></span> 選課清單</p>
+        <div class="bg-container course-list">
             <!-- ===== -->
             <div class="personal-account">
                 <div class="step1">
+                    <h3 class="highlight">選課清單</h3>
                     <!-- ===平板、桌電版本 start=== -->
                     <div class="d-table">
                         <div class="row title">
-                            <div class="col-xs-3 cell">日期</div>
+                            <div class="col-xs-2 cell">日期</div>
+                            <div class="col-xs-1 cell">班別</div>
+                            <div class="col-xs-2 cell">時段</div>
                             <div class="col-xs-5 cell">內容</div>
-                            <div class="col-xs-2 cell">新增金額</div>
-                            <div class="col-xs-2 cell">扣除金額</div>
+                            <div class="col-xs-1 cell">學費</div>
+                            <div class="col-xs-1 cell"></div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-3 cell">2016/11/08</div>
-                            <div class="col-xs-5 cell text-left">T3精兵營:課程退選費用</div>
-                            <div class="col-xs-2 cell">200</div>
-                            <div class="col-xs-2 cell">0</div>
+                            <div class="col-xs-2 cell">2017/11/08
+                                <br> ~
+                                <br>2017/12/08</div>
+                            <div class="col-xs-1 cell">014</div>
+                            <div class="col-xs-2 cell">(二)
+                                <br>晚上19:00</div>
+                            <div class="col-xs-5 cell text-left">T3精兵營:課程退選費用<span class="obligatory">必修</span></div>
+                            <div class="col-xs-1 cell">NT.<span class="money">500</span></div>
+                            <div class="col-xs-1 cell">
+                                <i class="fa fa-times gray" aria-hidden="true"></i>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-3 cell">2016/11/08</div>
-                            <div class="col-xs-5 cell text-left">T3精兵營:課程退選費用</div>
-                            <div class="col-xs-2 cell">3600</div>
-                            <div class="col-xs-2 cell">0</div>
+                            <div class="col-xs-2 cell">2017/11/08
+                                <br> ~
+                                <br>2017/12/08</div>
+                            <div class="col-xs-1 cell">014</div>
+                            <div class="col-xs-2 cell">(二)
+                                <br>晚上19:00</div>
+                            <div class="col-xs-5 cell text-left">T3精兵營:課程退選費用<span class="elective">選修</span></div>
+                            <div class="col-xs-1 cell">NT.<span class="money">500</span></div>
+                            <div class="col-xs-1 cell"><i class="fa fa-times gray" aria-hidden="true"></i></div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-3 cell">2016/11/08</div>
-                            <div class="col-xs-5 cell text-left">T3精兵營:課程退選費用</div>
-                            <div class="col-xs-2 cell">3600</div>
-                            <div class="col-xs-2 cell">200</div>
+                            <div class="col-xs-2 cell">2017/11/08
+                                <br> ~
+                                <br>2017/12/08</div>
+                            <div class="col-xs-1 cell">014</div>
+                            <div class="col-xs-2 cell">(二)
+                                <br>晚上19:00</div>
+                            <div class="col-xs-5 cell text-left">T3精兵營:課程退選費用<span class="obligatory">必修</span></div>
+                            <div class="col-xs-1 cell">NT.<span class="money">1500</span></div>
+                            <div class="col-xs-1 cell"><i class="fa fa-times gray" aria-hidden="true"></i></div>
                         </div>
                     </div>
                     <!-- ===平板、桌電版本 finish=== -->
@@ -180,26 +162,41 @@
                             <div class="row">
                                 <div class="col-xs-4 title">日期</div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">2016/11/08
+                                    <div class="pull-right">2016/11/08~2016/12/31
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 title">班別</div>
+                                <div class="col-xs-8">
+                                    <div class="pull-right">014</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 title">時段</div>
+                                <div class="col-xs-8">
+                                    <div class="pull-right">(二)19:00-21:00</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-4 title">內容</div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">T3精兵營:課程退選費用</div>
+                                    <div class="pull-right">T3精兵營:課程退選費用
+                                        <br><span class="obligatory">必修</span></div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-4 title">新增金額</div>
+                                <div class="col-xs-4 title">學費</div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">3600</div>
+                                    <div class="pull-right">NT.<span class="money">1200</span></div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-4 title">扣除金額</div>
+                                <div class="col-xs-4 title"></div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">200</div>
+                                    <div class="pull-right">
+                                        <a href="#" class="delete-course">刪除課程</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -207,74 +204,60 @@
                             <div class="row">
                                 <div class="col-xs-4 title">日期</div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">2016/11/08
+                                    <div class="pull-right">2016/11/08~2016/12/31
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 title">班別</div>
+                                <div class="col-xs-8">
+                                    <div class="pull-right">014</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 title">時段</div>
+                                <div class="col-xs-8">
+                                    <div class="pull-right">(二)19:00-21:00</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-4 title">內容</div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">T3精兵營:課程退選費用</div>
+                                    <div class="pull-right">T3精兵營:課程退選費用
+                                        <br><span class="obligatory">必修</span></div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-4 title">新增金額</div>
+                                <div class="col-xs-4 title">學費</div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">3600</div>
+                                    <div class="pull-right">NT.<span class="money">500</span></div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-4 title">扣除金額</div>
+                                <div class="col-xs-4 title"></div>
                                 <div class="col-xs-8">
-                                    <div class="pull-right">200</div>
+                                    <div class="pull-right">
+                                        <a href="#" class="delete-course">刪除課程</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- ===手機版本 finish=== -->
                     <div class="final">
-                        帳戶餘額
-                        <div class="pull-right red">NT.1000</div>
+                        共計
+                        <div class="pull-right red">NT.<span class="totalMoney"></span></div>
                     </div>
-                    <div class="btn pull-right">申請退款</div>
+                    <div class="btn pull-right" id="wrong-popout">確定選課</div>
+                    <div class="btn pull-right">繼續選課</div>
                 </div>
                 <div class="step2 hide">
-                    <h3 class="highlight text-center">申請退款</h3>
-                    <h5 class="gray text-center">應退金額</h5>
-                    <h4 class="red text-center">NT.1000</h4>
-                    <p class="light-blue text-center"><i class="fa fa-info-circle" aria-hidden="true"></i>請填寫欲領取退款之銀行資訊</p>
-                    <div class="form">
-                        <div class="input-group">
-                            <h5 class="gray">銀行戶名：</h5>
-                            <input type="text">
-                        </div>
-                        <div class="input-group">
-                            <h5 class="gray middle">銀行代碼：</h5>
-                            <div class="input-group inline-table middle">
-                                <select class="form-control">
-                                    <option value="服務業">服務業</option>
-                                </select>
-                                <span class="input-group-addon"><i class="fa fa-angle-down"></i></span>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <h5 class="gray">所屬分行：</h5>
-                            <input type="text">
-                        </div>
-                        <div class="input-group">
-                            <h5 class="gray">銀行帳號：</h5>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="btn">下一步</div>
-                    </a>
-                </div>
-                <div class="step3 hide">
-                    <h3 class="highlight text-center">申請退款：成功!</h3>
-                    <p>我們已收到您的退款申請，將於<span class="light-blue">14個工作天內</span>退款至您所填寫的銀行帳戶內。
-                        <br><span class="light-blue">退款完成時會發系統通知</span>，請留意火把大學個人頁面系統通知，謝謝您。
-                    </p>
+                    <h3 class="highlight text-center">選課成功，請儘速繳費</h3>
+                    <h5 class="gray text-center">請於<span class="light-blue">2016/12/31前</span>完成繳款，才完成報名。</h5>
+                    <h4 class="red text-center">應付金額：NT.3000元</h4>
+                    <p class="gray text-center">匯款資訊，如下</p>
+                    <h5 class="text-center">戶名：基督教財團法人火把行道會</h5>
+                    <h5>銀行： 008 兆豐銀行</h5>
+                    <h5>帳號： 0000-111111213</h5>
                     <a href="#">
                         <div class="btn">完成</div>
                     </a>
@@ -306,6 +289,16 @@
 <script src="build/js/jquery.min.js"></script>
 <script src="build/js/bootstrap.min.js"></script>
 <script src="build/js/menu.min.js"></script>
+<script src='build/js/courseList-scripts.min.js'></script>
+<script type="text/javascript">
+$('#wrong-popout').click(function() {
+    swal({
+        title: "Oops!",
+        text: "課程時間衝突，請重新確認選課清單。",
+        type: "error"
+    });
+})
+</script>
 <!-- <script src="http://172.20.10.2:35729/livereload.js?snipver=1"></script> -->
 
 </html>

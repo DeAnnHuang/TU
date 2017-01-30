@@ -1,0 +1,64 @@
+.course-list-wrap {
+    margin-top: -25px;
+    .course-list {
+        background: transparent;
+        box-shadow: none;
+        .step1 {
+            .fa-times.gray {
+                &:hover {
+                    color: $red;
+                }
+            }
+            .obligatory,
+            .elective {
+                padding: 3px 10px;
+                margin: 0 10px;
+                color: white;
+            }
+            .obligatory {
+                background-color: #4579e3;
+            }
+            .elective {
+                background-color: #f6b37f;
+            }
+            .btn {
+                margin: 25px 10px;
+                &:first-child {
+                    margin-right: -15px;
+                }
+            }
+        }
+        .step2{
+        	.btn{
+        		margin: 40px 0;
+        	}
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .course-list-wrap {
+        margin-top: -75px;
+        .course-list {
+            background: #f6f6f6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            .step1 {
+                .obligatory,
+                .elective {
+                    margin: 10px 0 0 0;
+                    display: inline-block;
+                }
+                .btn {
+                    float: right;
+                    margin: 15px 1%;
+                    width: 48%;
+                }
+                .delete-course {
+                    background-color: $gray;
+                    color: #fff;
+                    padding: 7px 15px;
+                }
+            }
+        }
+    }
+}

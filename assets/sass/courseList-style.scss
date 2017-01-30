@@ -1,0 +1,21 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "setting";
+@import "sweetalert";
+@import "header";
+@import "menu";
+@import "bg";
+@import "history";
+@import "personalAccount";
+@import "courseList";
+@import "footer";
+.sa-confirm-button-container {
+    .btn {
+        background-color: $hightlight;
+        color: #fff;
+        border: $hightlight;
+        &:active {
+            background-color: $hightlight;
+        }
+    }
+}

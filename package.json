@@ -29,6 +29,7 @@
     "path": "^0.12.7"
   },
   "dependencies": {
+    "bootstrap-sweetalert": "^1.0.1",
     "jquery": "^2.2.3",
     "swiper": "^3.4.1"
   }
