@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Torch University</title>
     <link rel="shortcut icon" type="image/png" href="build/img/favicon.png" />
-    <link rel="stylesheet" href="build/css/history-style.css">
+    <link rel="stylesheet" href="build/css/semesterCourse-style.css">
 </head>
 
 <body>
@@ -127,13 +127,13 @@
                         <div class="col-md-2 col-xs-4 item">個人資料頁</div>
                     </a>
                     <a href="semester-course.html">
-                        <div class="col-md-2 col-xs-4 item">當期課程</div>
+                        <div class="col-md-2 col-xs-4 item  active">當期課程</div>
                     </a>
                     <a href="history.html">
                         <div class="col-md-2 col-xs-4 item">歷史紀錄</div>
                     </a>
                     <a href="system-notification.html">
-                        <div class="col-md-2 col-xs-4 item active">系統通知</div>
+                        <div class="col-md-2 col-xs-4 item">系統通知</div>
                     </a>
                     <a href="#">
                         <div class="col-md-2 col-xs-4 item">個人帳戶</div>
@@ -144,54 +144,113 @@
                 </div>
             </div>
             <!-- ===== -->
-            <div class="history">
+            <!-- 無資料 start -->
+            <div class="no-courseData hide">
+                <div class="course-name color1 margin10">聖經學院 | 3-1領袖班 吳永成牧師
+                    <div class="pull-right"><a href="#">我要退選</a></div>
+                </div>
+                <div class="course-name color3 margin10">敬拜學院 | 1-1初階吉他 李東昇老師
+                    <div class="pull-right"><a href="#">我要退選</a></div>
+                </div>
+            </div>
+            <div class="drop-course-1 text-center hide">
+                <h2 class="highlight">課程退選</h2>
+                <p class="gray">聖經學院 3-1領袖班：吳永成牧師</p>
+                <div class="btn">確定退選</div>
+            </div>
+            <div class="drop-course-2 text-center">
+                <h2 class="highlight">退選成功</h2>
+                <p class="gray">聖經學院 3-1領袖班：吳永成牧師</p>
+                <p class="gray">請至<span class="highlight">個人帳戶</span>申請退費!</p>
+                <div class="btn">前往個人帳戶</div>
+            </div>
+            <!-- 無資料 finish -->
+            <!-- 有資料 start -->
+            <div class="courseData hide">
                 <!-- ===平板、桌電版本 start=== -->
                 <div class="d-table">
+                    <div class="course-name color1">聖經學院 | 3-1領袖班 吳永成牧師</div>
+                    <!-- color1:聖經 -->
+                    <!-- color2:領袖 -->
+                    <!-- color3:敬拜 -->
+                    <!-- color4:藝術媒體 -->
+                    <!-- color5:宣教 -->
+                    <!-- color6:全人 -->
+                    <!-- color7:青少年 -->
                     <div class="row title">
-                        <div class="col-xs-3 cell">信息日期</div>
-                        <div class="col-xs-6 cell">內容</div>
-                        <div class="col-xs-3 cell">備註</div>
+                        <div class="col-xs-2 cell">出席狀況</div>
+                        <div class="col-xs-2 cell">日期</div>
+                        <div class="col-xs-6 cell">課程內容</div>
+                        <div class="col-xs-2 cell">備註</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-3 cell">2016/11/08</div>
-                        <div class="col-xs-6 cell text-left">
-                            【火把查經】
-                            <br>日期:11/17(四)
-                            <br>講師:楊永民牧師
-                            <br>地點: 火把教會辦公室大會堂(台北市許昌街42號9F)br查經內容: 約翰福音
-                            <br>邀請弟兄姐妹一起在神的話語上扎根，當天攜帶聖經!</div>
-                        <div class="col-xs-3 cell">課程異動</div>
+                        <div class="col-xs-2 cell"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i></div>
+                        <div class="col-xs-2 cell">2016/11/08</div>
+                        <div class="col-xs-6 cell text-left">L6-文化職任</div>
+                        <div class="col-xs-2 cell"></div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-3 cell">2016/11/08</div>
-                        <div class="col-xs-6 cell text-left">11/11全國勞工補假一次，火把辦公室開放時間更新。</div>
-                        <div class="col-xs-3 cell"></div>
+                        <div class="col-xs-2 cell"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i></div>
+                        <div class="col-xs-2 cell">2016/11/08</div>
+                        <div class="col-xs-6 cell text-left">L6-文化職任</div>
+                        <div class="col-xs-2 cell"></div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-3 cell">2016/11/08</div>
-                        <div class="col-xs-6 cell text-left">11/11全國勞工補假一次，火把辦公室開放時間更新。</div>
-                        <div class="col-xs-3 cell"></div>
+                        <div class="col-xs-2 cell"><i class="fa fa-times red" aria-hidden="true"></i></div>
+                        <div class="col-xs-2 cell">2016/11/08</div>
+                        <div class="col-xs-6 cell text-left">L6-文化職任</div>
+                        <div class="col-xs-2 cell">補</div>
+                    </div>
+                </div>
+                <div class="d-table">
+                    <div class="course-name color3">敬拜學院 | 1-1初階吉他 李東昇老師</div>
+                    <div class="row title">
+                        <div class="col-xs-2 cell">出席狀況</div>
+                        <div class="col-xs-2 cell">日期</div>
+                        <div class="col-xs-6 cell">課程內容</div>
+                        <div class="col-xs-2 cell">備註</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 cell"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i></div>
+                        <div class="col-xs-2 cell">2016/11/08</div>
+                        <div class="col-xs-6 cell text-left">L6-文化職任</div>
+                        <div class="col-xs-2 cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 cell"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i></div>
+                        <div class="col-xs-2 cell">2016/11/08</div>
+                        <div class="col-xs-6 cell text-left">L6-文化職任</div>
+                        <div class="col-xs-2 cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 cell"><i class="fa fa-times red" aria-hidden="true"></i></div>
+                        <div class="col-xs-2 cell">2016/11/08</div>
+                        <div class="col-xs-6 cell text-left">L6-文化職任</div>
+                        <div class="col-xs-2 cell">補</div>
                     </div>
                 </div>
                 <!-- ===平板、桌電版本 finish=== -->
                 <!-- ===手機版本 start=== -->
                 <div class="m-table">
+                    <div class="course-name color1">聖經學院 | 3-1領袖班 吳永成牧師</div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-xs-4 title">信息日期</div>
+                            <div class="col-xs-4 title">出席狀況</div>
                             <div class="col-xs-8">
-                                <div class="pull-right">2016/11/08
+                                <div class="pull-right"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-4 title">內容</div>
+                            <div class="col-xs-4 title">日期</div>
                             <div class="col-xs-8">
-                                <div class="pull-right">[火把查經]
-                                    <br>日期: 11/17(四)
-                                    <br>講師: 楊永民牧師
-                                    <br>地點: 火把教會辦公室大會堂(台北市許昌街42號9F)br查經內容: 約翰福音
-                                    <br>邀請弟兄姐妹一起在神的話語上扎根，當天攜帶聖經!</div>
+                                <div class="pull-right">2016/11/08</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">課程內容</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right">L6-文化職任</div>
                             </div>
                         </div>
                         <div class="row">
@@ -203,16 +262,79 @@
                     </div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-xs-4 title">信息日期</div>
+                            <div class="col-xs-4 title">出席狀況</div>
                             <div class="col-xs-8">
-                                <div class="pull-right">2016/11/11
+                                <div class="pull-right"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-4 title">內容</div>
+                            <div class="col-xs-4 title">日期</div>
                             <div class="col-xs-8">
-                                <div class="pull-right">11/11全國勞工補假一次，火把辦公室開放時間更新。</div>
+                                <div class="pull-right">2016/11/08</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">課程內容</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right">L6-文化職任</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">備註</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-table">
+                    <div class="course-name color3">敬拜學院 | 1-1初階吉他 李東昇老師</div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-xs-4 title">出席狀況</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">日期</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right">2016/11/08</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">課程內容</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right">L6-文化職任</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">備註</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-xs-4 title">出席狀況</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right"><i class="fa fa-check-circle light-blue" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">日期</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right">2016/11/08</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 title">課程內容</div>
+                            <div class="col-xs-8">
+                                <div class="pull-right">L6-文化職任</div>
                             </div>
                         </div>
                         <div class="row">
@@ -225,6 +347,7 @@
                 </div>
                 <!-- ===手機版本 finish=== -->
             </div>
+            <!-- 有資料 finish -->
             <!-- ===== -->
         </div>
     </div>
@@ -251,6 +374,6 @@
 <script src="build/js/jquery.min.js"></script>
 <script src="build/js/bootstrap.min.js"></script>
 <script src="build/js/menu.min.js"></script>
-<!-- <script src="http://172.20.10.2:35729/livereload.js?snipver=1"></script> -->
+<script src="http://172.20.10.2:35729/livereload.js?snipver=1"></script>
 
 </html>

@@ -1,75 +1,71 @@
 @media screen and (min-width: 768px) {
-    .history {
-        .d-table {
-            margin: 40px 0;
-            .cell {
-                border: 1px solid #bdc2c4;
-                border-left: none;
-                border-top: none;
-                text-align: center;
-                padding: 10px;
-                &:first-child {
-                    border-left: 1px solid #bdc2c4;
-                }
-                i {
-                    font-size: 18px;
-                    margin-right: 5px;
+    .d-table {
+        margin: 40px 0;
+        .cell {
+            border: 1px solid #bdc2c4;
+            border-left: none;
+            border-top: none;
+            text-align: center;
+            padding: 10px;
+            &:first-child {
+                border-left: 1px solid #bdc2c4;
+            }
+            i {
+                font-size: 18px;
+                margin-right: 5px;
+            }
+        }
+        .row {
+            @include display-flex();
+            flex-wrap: wrap;
+            &:first-child {
+                border-top: 1px solid #bdc2c4;
+            }
+            &>[class*="col-"] {
+                @include Flex(center, center);
+                // @include flex-direction(column);
+                &.text-left {
+                    @include justify-content(flex-start);
+                    text-align: left;
                 }
             }
+        }
+        .title {
+            color: $gray;
+        }
+    }
+    .m-table {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .d-table {
+        display: none;
+    }
+    .m-table {
+        .card {
+            margin: 20px 10px;
             .row {
-                @include display-flex();
-                flex-wrap: wrap;
-                &:first-child {
-                    border-top: 1px solid #bdc2c4;
-                }
+                border-left: 1px solid #bdc2c4;
+                border-right: 1px solid #bdc2c4;
                 &>[class*="col-"] {
-                    @include Flex(center, center);
-                    // @include flex-direction(column);
-                    &.text-left {
-                        @include justify-content(flex-start);
-                        text-align: left;
+                    border-top: 1px solid #bdc2c4;
+                    padding: 10px;
+                    .pull-right {
+                        text-align: right;
                     }
+                }
+                &:last-child {
+                    border-bottom: 1px solid #bdc2c4;
                 }
             }
             .title {
                 color: $gray;
             }
-        }
-        .m-table {
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .history {
-        .d-table {
-            display: none;
-        }
-        .m-table {
-            .card {
-                margin: 20px 10px;
-                .row {
-                	border-left: 1px solid #bdc2c4;
-                	border-right: 1px solid #bdc2c4;
-                    &>[class*="col-"] {
-                        border-top: 1px solid #bdc2c4;
-                        padding: 10px;
-                        .pull-right{
-                            text-align: right;
-                        }
-                    }
-                    &:last-child {
-                        border-bottom: 1px solid #bdc2c4;
-                    }
-                }
-                .title{
-                	color: $gray;
-                }
-                i{
-                	font-size: 18px;
-                	margin-right: 5px;
-                }
+            i {
+                font-size: 18px;
+                margin-right: 5px;
             }
         }
     }
