@@ -1,1 +1,7 @@
 npm-debug.log
+node_modules
+.sass-cache
+assets
+zip
+gulpfile.js
+package.json
