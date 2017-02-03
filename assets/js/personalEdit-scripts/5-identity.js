@@ -1,3 +1,0 @@
- $('#identity').multipleSelect({
-     selectAll: false
- });
