@@ -26,6 +26,7 @@
     }
     .course-detail {
         margin-bottom: 40px;
+        clear:both;
         .card {
             background: #fff;
             padding: 10px;
@@ -35,10 +36,10 @@
             }
             .vertical-title {
                 font-size: 20px;
-                writing-mode: tb-rl;
-                -webkit-writing-mode: vertical-rl;
-                writing-mode: vertical-rl;
-                *writing-mode: tb-rl;
+                writing-mode: vertical-lr;
+                -webkit-writing-mode: vertical-lr;
+                -ms-writing-mode: vertical-lr;
+                max-width: 30px;
             }
             .maxHeight {
                 height: 170px;

@@ -126,7 +126,13 @@ i {
 }
 
 .alignIn1-top-center {
+    display: -moz-box;
     @include Flex(flex-start, center);
+}
+
+.alignIn1-top-left {
+    display: -moz-box;
+    @include Flex(flex-start, flex-start);
 }
 
 .alignIn1-center-left {
