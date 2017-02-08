@@ -4284,11 +4284,12 @@ $(function() {
         }
     });
 
+
     $('#upload').on('change', function() {
         $(".popout-wrap").css('top', '0');
-
         readFile(this);
     });
+
 
     $('.upload-result').on('click', function(ev) {
         $(".popout-wrap").css('top', '-100%');
