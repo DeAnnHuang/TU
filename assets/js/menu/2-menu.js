@@ -12,7 +12,7 @@ $close_menu.click(function() {
 
 
 function menuClickHandle(click_event, title, who) {
-    click_event.click(function() {
+    click_event.click(function(event) {
         event.preventDefault();
         $body.css('overflow', 'hidden');
         $('.menu-wrap > div').addClass('hide');
