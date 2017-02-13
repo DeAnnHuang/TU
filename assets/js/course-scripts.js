@@ -29,10 +29,8 @@ $select.each(function() {
             const $FinalSelection = $(".select"),
                 $input = $('#cosid');
 
-            (!$FinalSelection.get(0)) ?
-            $input.val(''); :
-            $input.val($FinalSelection.attr('value'));
+            (!$FinalSelection.get(0)) ?$input.val('') :$input.val($FinalSelection.attr('value'));
         }
 
-    });
+    );
 })
