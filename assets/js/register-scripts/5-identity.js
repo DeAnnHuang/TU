@@ -1,5 +1,6 @@
  $('#identity').multipleSelect({
-     selectAll: false
+     selectAll: false,
+     width: '100%'
  });
 
  function HandleIdentityValue(select) {

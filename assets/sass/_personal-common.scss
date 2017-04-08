@@ -52,7 +52,7 @@
             margin-bottom: 40px;
         }
         .p-common {
-            @include Flex(flex-start, space-between);
+            @include Flex(flex-start, space-around);
             .p-name {
                 font-size: 24px;
                 margin-top: 0;

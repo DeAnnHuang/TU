@@ -29,13 +29,19 @@
      .breadcrum {
          color: #fff;
      }
+     label {
+         margin: 0 10px 0 0;
+     }
+     input[type="radio"]{
+        margin: 0 5px;
+     }
      .input-group {
          color: $hightlight;
          margin: 25px 0;
          font-size: 18px;
          h5 {
              display: inline-block;
-             width: 90px;
+             width: 6em;
              &.vertical-align {
                  vertical-align: text-bottom;
              }
@@ -46,7 +52,8 @@
      }
      .register {
          background: #f6f6f6;
-         padding: 40px;
+         padding-top: 40px;
+         padding-bottom: 40px;
          border-radius: 5px;
          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
          width: 100%;
@@ -63,6 +70,10 @@
                  display: none;
              }
              @include Flex(flex-start, flex-start);
+             .pro-form {
+                 width: 60%;
+                 margin: 0 auto;
+             }
              .pro-pic {
                  margin: 50px 80px;
                  #upload-img {
@@ -183,9 +194,9 @@
              }
          }
          .step4 {
-            &.hide{
-                display: none;
-            }
+             &.hide {
+                 display: none;
+             }
              h4 {
                  margin-top: 100px;
                  color: $hightlight;
@@ -221,6 +232,10 @@
              .step1 {
                  @include Flex(center, center);
                  @include flex-direction(column);
+                 .pro-form {
+                     width: 100%;
+                     margin: 0 auto;
+                 }
                  .pro-pic {
                      margin: 0 auto;
                  }
@@ -292,10 +307,19 @@
                  h4 {
                      margin-top: 60px;
                  }
-                 a{
-                    margin: 0 20px;
+                 a {
+                     margin: 0 20px;
                  }
              }
+         }
+     }
+ }
+ 
+ @media screen and (max-width: 320px) {
+     .register-wrap .register .step1 .input-group {
+         font-size: 14px;
+         h5 {
+             font-size: 14px;
          }
      }
  }

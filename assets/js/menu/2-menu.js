@@ -5,16 +5,28 @@ const $body = $('body'),
 
 $close_menu.click(function() {
     $menu_wrap.addClass('hide');
-    $body.css('overflow', 'scroll');
+    // $body.css('overflow', 'scroll');
     $('.menu-wrap > div').addClass('hide');
 });
+if ($win.width() > 414) {
+    $win.scroll(function(event) {
+        // console.log(event.target);
+
+        if (event.target == document) {
+            $menu_wrap.addClass('hide');
+        }
+    })
+}
+
 
 
 
 function menuClickHandle(click_event, title, who) {
     click_event.click(function(event) {
         event.preventDefault();
-        $body.css('overflow', 'hidden');
+        if ($win.width() <= 414) {
+            $body.css('overflow', 'hidden');
+        }
         $('.menu-wrap > div').addClass('hide');
         $menu_wrap.removeClass('hide');
         $title.html(title);

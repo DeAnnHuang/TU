@@ -9,12 +9,12 @@
         width: auto;
     }
     .schools_logo {
-        width: 155px;
+        width: 130px;
         height: auto;
     }
     p.intro {
         width: 55%;
-        margin: 0 auto;
+        margin: 35px auto;
         font-size: 16px;
         line-height: 24px;
     }
@@ -32,6 +32,7 @@
     }
     h5 {
         color: $blue;
+        margin-bottom: 35px;
     }
     .school-card {
         background: #fff;
@@ -42,7 +43,7 @@
             color: #fff;
             background: $hightlight;
         }
-        &.gray{
+        &.gray {
             color: $gray;
         }
         b {
@@ -65,13 +66,14 @@
         p.intro {
             width: 100%;
             line-height: 20px;
+            margin: 20px auto;
         }
         .title {
             height: 44px;
             width: auto;
         }
         .schools_logo {
-            width: 155px;
+            width: 120px;
             height: auto;
         }
         .map {
@@ -83,8 +85,28 @@
                 @include transform(translate(0, 0));
             }
         }
+        h5{
+            margin-bottom: 20px;
+        }
+        .school-card {
+            p {
+                font-size: 15px;
+                height: 40px;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
     }
     .row {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .school-intro .school-card p {
+        font-size: 14px;
     }
 }

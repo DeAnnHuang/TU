@@ -1,19 +1,19 @@
 .slider {
     position: relative;
-    height: 670px;
+    height: 46vw;
     overflow: hidden;
     main {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         @include transform(translate(-50%, -50%));
         text-align: center;
         z-index: 999;
-        h1 {
+        h2 {
             color: #fff;
             font-style: italic;
             font-weight: bold;
-            text-shadow: 0 0 15px rgba(#000, 0.6);
+            text-shadow: 1px 1px 5px rgba(#000, 0.5);
         }
         .btn {
             color: #fff;
@@ -23,6 +23,7 @@
             margin-top: 5px;
             display: inline-block;
             position: relative;
+            background: none;
             h5,
             i {
                 vertical-align: middle;
@@ -30,6 +31,7 @@
             h5 {
                 display: inline-block;
                 letter-spacing: 3px;
+                text-shadow: 0.5px 0.5px rgba(0,0,0,0.6);
             }
             &:after {
                 position: absolute;
@@ -58,10 +60,10 @@
             }
         }
         &.swiper-container-vertical>.swiper-pagination-bullets {
-            left: 10px;
+            left: 50px;
         }
         .swiper-pagination-bullet {
-            width: 3px;
+            width: 5px;
             height: 8vw;
             max-height: 40px;
             border-radius: 0;
@@ -94,15 +96,19 @@
 }
 
 @media screen and (max-width: 768px) {
-   .slider {
-    height: 50vw;
-   }
+    .slider {
+        height: 50vw;
+        main{
+            top:50%;
+        }
+    }
 }
+
 @media screen and (max-width: 414px) {
     .slider {
         height: 100vw;
         main {
-            h1 {
+            h2 {
                 font-size: 38px;
             }
             .btn {
@@ -117,11 +123,31 @@
                     height: 100%;
                 }
             }
+            &.swiper-container-vertical>.swiper-pagination-bullets {
+                left: 10px;
+            }
+            .swiper-pagination-bullet {
+                width: 3px;
+            }
         }
         .swiper-container-2 {
             p {
                 margin: 15px 0 35px 0;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .slider main{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .btn{
+        h5{
+            font-size: 15px;
         }
     }
 }

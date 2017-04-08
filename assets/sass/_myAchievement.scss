@@ -1,5 +1,5 @@
 .achievements {
-    margin-top: 40px;
+    margin-top: 40px !important;
     .achievement {
         text-align: center;
         img {
@@ -9,5 +9,11 @@
         p {
             margin-top: 10px;
         }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .achievements {
+        margin-top: 15px !important;
     }
 }

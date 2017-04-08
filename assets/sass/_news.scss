@@ -1,7 +1,7 @@
 .news {
     background: #eee;
     padding: 20px;
-    margin: 10px auto;
+    margin: 10px;
     text-align: center;
     position: relative;
     i {
@@ -16,7 +16,7 @@
     }
     &>div {
         position: relative;
-        margin: 0 10vw;
+        margin: 0 auto;
         &:before {
             position: absolute;
             content: '';

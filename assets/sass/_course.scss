@@ -17,6 +17,8 @@
         }
     }
     h5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
         color: $blue;
         span {
             margin-left: 5px;
@@ -27,6 +29,7 @@
     .course-detail {
         margin-bottom: 40px;
         clear:both;
+        margin: 15px;
         .card {
             background: #fff;
             padding: 10px;
@@ -58,7 +61,8 @@
     .course-class {
         border: 2px #fff solid;
         padding: 10px;
-        margin: 10px 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
         max-height: 250px;
         overflow: scroll;
         @include Flex(flex-start, flex-start);
@@ -162,8 +166,9 @@
         }
         .course-detail {
             -webkit-overflow-scrolling: touch;
+            margin: 0;
             .card {
-                margin: 10px 0;
+                margin: 5px 0;
             }
         }
         .course-class {
@@ -186,4 +191,13 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 320px) {
+ .course-intro {
+    .course-detail {
+        margin: -5px;
+    }
+ }
 }

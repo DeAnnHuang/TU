@@ -1,8 +1,9 @@
  $('#identity').multipleSelect({
-     selectAll: false
+     selectAll: false,
+     width: '100%'
  });
 
-function HandleIdentityValue(select) {
+ function HandleIdentityValue(select) {
      var ta = $('#roleid');
      ta.val(select);
  }
