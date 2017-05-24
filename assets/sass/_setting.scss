@@ -10,31 +10,51 @@ $fa-font-path:"../fonts";
 
 // ==== font-awesome ====//
 // ====font-size===== //
+body,
+html {
+    font-size: 15px;
+    line-height: 1.75;
+    letter-spacing: 0.1rem;
+}
+
 h1 {
-    font-size: 45px;
+    font-size: 3rem;
+    line-height: 1.75;
 }
 
 h2 {
-    font-size: 38px;
+    font-size: 2.5rem;
+    line-height: 1.75;
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.75;
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 1.2rem;
+    line-height: 1.75;
 }
 
 h6,
 p {
-    font-size: 15px;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
+// @media screen and (max-width: 414px) {
+//     h6,
+//     p {
+//         font-size: 15px;
+//         line-height: 18px;
+//     }
+// }
 // ====font-size===== //
 @mixin Flex($x, $y) {
     @include display-flex();
@@ -75,7 +95,7 @@ body {
 
 @media screen and (max-width: 320px) {
     .wrap {
-        max-width: 277px;
+        max-width: 305px;
     }
 }
 
@@ -174,6 +194,7 @@ i {
     margin-left: 30px !important;
     margin-right: 30px !important;
 }
+
 @media screen and (max-width: 414px) {
     .paddingLR-15 {
         padding-left: 10px;
@@ -184,20 +205,26 @@ i {
         margin-right: 10px !important;
     }
 }
+
 @media screen and (max-width: 320px) {
     .paddingLR-15 {
         padding-left: 5px;
         padding-right: 5px;
     }
-    .marginLR-30 {
-        margin-left: 5px !important;
-        margin-right: 5px !important;
+    .must0 {
+        margin: 0!important;
+        padding: 0!important;
     }
+    /*0508*/
+    // .marginLR-30 {
+    //     margin-left: 5px !important;
+    //     margin-right: 5px !important;
+    // }
 }
 
 //scroll bar
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
     height: 3px;
     opacity: 0;
 }

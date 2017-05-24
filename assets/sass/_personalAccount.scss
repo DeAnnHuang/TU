@@ -26,7 +26,8 @@
         @include flex-direction(column);
         margin-top: 40px;
         h5 {
-            margin-top: 20px;
+            /*0508*/
+            // margin-top: 20px;
         }
         h4 {
             font-weight: bold;
@@ -74,20 +75,27 @@
     .personal-account {
         .step1 {
             .final {
-                margin: 0 -5px;
+                margin: 0 10px;
+                font-weight: bold;
+                .red{
+                    font-size: 18px;
+                    margin-top: -5px;
+                }
             }
             .btn {
-                margin: 15px auto;
+                margin: 15px 10px;
                 float: none;
-                width: 100%;
+                // width: 100%;
+                display: block
             }
         }
         .step2,
         .step3 {
-            margin: 20px 0;
+            margin: 20px 15px;
             a,
             .btn {
                 width: 100%;
+                display: block;
             }
         }
     }

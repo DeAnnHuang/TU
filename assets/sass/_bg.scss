@@ -2,7 +2,7 @@
     @include Flex(center, center);
     p {
         text-align: center;
-        font-size: 24px;
+        // font-size: 24px;
         color: #fff;
     }
 }
@@ -21,8 +21,7 @@
 }
 
 .bg-container-wrap {
-    @include Flex(flex-start,
-    center);
+    @include Flex(flex-start,center);
     @include flex-direction(column);
     width: 80vw;
     margin: 0 auto;
@@ -54,11 +53,13 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 622px) {
     .bg {
         p {
-            margin-bottom: 70px;
-            font-size: 18px;
+            margin-bottom: 85px;
+            /*0508*/
+            // line-height: 1.7;
+            // font-size: 20px;
         }
     }
     .bg1 {
@@ -81,6 +82,7 @@
 
 @media screen and (max-width: 320px) {
     .bg-container-wrap .bg-container {
+        /*0508*/
         padding: 5px 0;
     }
 }

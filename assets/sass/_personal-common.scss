@@ -14,7 +14,7 @@
         .p-id,
         .p-group {
             p {
-                font-size: 18px;
+                // font-size: 18px;
                 color: $gray;
             }
             small {
@@ -41,12 +41,15 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 767px) {
     .bg-container {
         position: relative;
     }
     .personal {
+        margin-top: -160px;
         .pro-pic {
+            height: 95px;
+            width: 95px;
             display: block;
             margin: 0 auto;
             margin-bottom: 40px;
@@ -54,14 +57,8 @@
         .p-common {
             @include Flex(flex-start, space-around);
             .p-name {
-                font-size: 24px;
+                font-size: 22px;
                 margin-top: 0;
-            }
-            .p-id,
-            .p-group {
-                p {
-                    font-size: 16px;
-                }
             }
             .edit-btn {
                 border: none;
@@ -79,6 +76,23 @@
         .tabs {
             .item {
                 border: 1px #ddd solid;
+                // margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .personal {
+        .p-common {
+            padding: 0 15px;
+            @include flex-direction(column);
+            .p-id,
+            .p-group {
+                margin: 7px 0;
+                p {
+                    margin-bottom: 0;
+                }
             }
         }
     }

@@ -64,9 +64,10 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 767px) {
     .course-name {
-        margin: 20px -5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .no-courseData {
         .course-name {
@@ -79,11 +80,11 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
     .no-courseData {
         .course-name {
             .pull-right {
-                margin-top: 20px;
+                margin-top: 10px;
             }
         }
     }

@@ -28,17 +28,17 @@
                 }
             }
         }
-        .step2{
-        	.btn{
-        		margin: 40px 0;
-        	}
+        .step2 {
+            .btn {
+                margin: 40px 0;
+            }
         }
     }
 }
-
-@media screen and (max-width: 414px) {
+/*414px -> 622px 0508*/
+@media screen and (max-width: 622px) {
     .course-list-wrap {
-        margin-top: -75px;
+        margin-top: -160px;
         .course-list {
             background: #f6f6f6;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -57,6 +57,12 @@
                     background-color: $gray;
                     color: #fff;
                     padding: 7px 15px;
+                }
+            }
+            .step2 {
+                .btn {
+                    // margin: 40px 10px;
+                    display: block;
                 }
             }
         }

@@ -1,9 +1,10 @@
 .about {
     p {
-        width: 55%;
+        width: 60%;
         margin: 0 auto;
-        font-size: 16px;
-        line-height: 24px;
+        /*0508*/
+        // font-size: 16px;
+        // line-height: 24px;
     }
     img {
         display: block;
@@ -21,9 +22,11 @@
 
 @media screen and (max-width: 414px) {
     .about {
+
         p {
-            width: 100%;
-            line-height: 20px;
+            width: 90%;
+             /*0508*/
+            // line-height: 20px;
         }
         .about_photo {
             width: 172px;

@@ -45,7 +45,18 @@
         }
     }
 }
-
+@media screen and (min-width: 415px) and (max-width: 870px) {
+    .footer {
+        .group {
+            .right{
+                margin-left: 50px;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
 @media screen and (max-width: 414px) {
     .footer {
     	position: relative;
