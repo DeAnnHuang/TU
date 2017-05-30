@@ -99,7 +99,7 @@
         </div>
     </div>
     <div class="bg1">
-        <img src="build/img/bg/title.png">
+        <!-- <img src="build/img/bg/title.png"> -->
     </div>
     <div class="popout-wrap">
         <div class="crop">
@@ -107,23 +107,25 @@
             <button class="upload-result btn">裁剪</button>
         </div>
     </div>
-    <div class="register-wrap">
+    <div class="register-wrap wrap">
         <p class="breadcrum"><span class="rhombus"></span> 註冊頁面</p>
         <div class="register">
             <div class="step1">
-                <div class="pro-pic">
+                <!--                 <div class="pro-pic">
                     <img src="build/img/bg/propic.jpg" class="img-circle" id="upload-img">
                     <div class="file-btn btn">
                         <span>上傳大頭貼</span>
                         <input type="file" id="upload" />
                     </div>
-                </div>
+                </div> -->
                 <div class="pro-form">
-                    <p class="warning"><i class="fa fa-exclamation-triangle"></i> 您尚未輸入姓名...</p>
+                    <h4 class="highlight text-center">請填寫個人基本資料</h4>
+                    <!--                     <p class="warning"><i class="fa fa-exclamation-triangle"></i> 您尚未輸入姓名...</p>
                     <p class="warning"><i class="fa fa-exclamation-triangle"></i> 手機格式不正確...</p>
                     <p class="warning"><i class="fa fa-exclamation-triangle"></i> 您的驗證碼有誤，請重新輸入</p>
+ -->
                     <div class="input-group">
-                        <h5><span class="rhombus"></span>姓名*</h5>
+                        <h5><span class="rhombus"></span>最多四字*</h5>
                         <input type="text" name="user-name">
                     </div>
                     <div class="input-group">
@@ -133,12 +135,13 @@
                     </div>
                     <div class="input-group">
                         <h5><span class="rhombus"></span>性別*</h5>
-                        <label class="radio-inline">
+                        <!--                         <label class="radio-inline">
                             <input type="radio" name="user-sex" value="men">男
                         </label>
                         <label class="radio-inline">
                             <input type="radio" name="user-sex" value="women">女
-                        </label>
+                        </label> -->
+                        <span id="ContentPlaceHolder1_rnd_gender"><input id="ContentPlaceHolder1_rnd_gender_0" type="radio" name="ctl00$ContentPlaceHolder1$rnd_gender" value="M"><label for="ContentPlaceHolder1_rnd_gender_0">男</label><input id="ContentPlaceHolder1_rnd_gender_1" type="radio" name="ctl00$ContentPlaceHolder1$rnd_gender" value="F"><label for="ContentPlaceHolder1_rnd_gender_1">女</label></span>
                     </div>
                     <div class="input-group margin0">
                         <h5 class="vertical-align"><span class="rhombus"></span>生日*</h5>
@@ -153,13 +156,20 @@
                     </div>
                     <div class="input-group">
                         <h5><span class="rhombus"></span>受洗*</h5>
-                        <label class="radio-inline">
+                        <!-- <label class="radio-inline">
                             <input type="radio" name="user-baptized" value="已受洗">已受洗
                         </label>
                         <label class="radio-inline">
                             <input type="radio" name="user-baptized" value="尚未受洗">尚未受洗
-                        </label>
+                        </label> -->
+                        <span id="ContentPlaceHolder1_rnd_if_baptized"><input id="ContentPlaceHolder1_rnd_if_baptized_0" type="radio" name="ctl00$ContentPlaceHolder1$rnd_if_baptized" value="1"><label for="ContentPlaceHolder1_rnd_if_baptized_0">已受洗</label><input id="ContentPlaceHolder1_rnd_if_baptized_1" type="radio" name="ctl00$ContentPlaceHolder1$rnd_if_baptized" value="2"><label for="ContentPlaceHolder1_rnd_if_baptized_1">未受洗</label></span>
                     </div>
+                    <div class="input-group">
+                            <h5>
+                                <span class="rhombus"></span>婚姻*</h5>
+                            <span id="ContentPlaceHolder1_rnd_marriage_type"><input id="ContentPlaceHolder1_rnd_marriage_type_0" type="radio" name="ctl00$ContentPlaceHolder1$rnd_marriage_type" value="1"><label for="ContentPlaceHolder1_rnd_marriage_type_0">未婚</label><input id="ContentPlaceHolder1_rnd_marriage_type_1" type="radio" name="ctl00$ContentPlaceHolder1$rnd_marriage_type" value="2"><label for="ContentPlaceHolder1_rnd_marriage_type_1">已婚</label><input id="ContentPlaceHolder1_rnd_marriage_type_2" type="radio" name="ctl00$ContentPlaceHolder1$rnd_marriage_type" value="3"><label for="ContentPlaceHolder1_rnd_marriage_type_2">其他</label></span>
+                            <span class="tip"><i class="fa fa-info-circle"></i>供選課資格確認使用</span>
+                        </div>
                     <div class="input-group">
                         <h5 class="vertical-align"><span class="rhombus"></span>職業*</h5>
                         <div class="input-group inline-table">
