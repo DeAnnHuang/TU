@@ -30,10 +30,10 @@
          color: #fff;
      }
      label {
-         margin: 0 10px 0 0;
+         margin: 0 5px 0 0;
      }
-     input[type="radio"]{
-        margin: 0 5px;
+     input[type="radio"] {
+         margin: 0 5px;
      }
      .input-group {
          color: $hightlight;
@@ -41,7 +41,7 @@
          font-size: 18px;
          h5 {
              display: inline-block;
-             width: 6em;
+             width: 6.5em;
              &.vertical-align {
                  vertical-align: text-bottom;
              }
@@ -216,6 +216,15 @@
                      color: $hightlight;
                  }
              }
+         }
+     }
+ }
+ 
+ @media screen and (min-width: 415px) and (max-width: 768px) {
+     .register-wrap .register {
+        padding: 1.3vw;
+         .step1 .pro-form {
+             width: 100% !important;
          }
      }
  }

@@ -52,11 +52,29 @@
         }
         p {
             text-align: center;
-            font-size: 16px;
+            // font-size: 16px;
             margin-top: 14px;
             i {
                 vertical-align: baseline;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .school-intro p.intro{
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .school-card {
+        p {
+            height: 3rem;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
     }
 }
@@ -85,13 +103,13 @@
                 @include transform(translate(0, 0));
             }
         }
-        h5{
+        h5 {
             margin-bottom: 20px;
         }
         .school-card {
             p {
-                font-size: 15px;
-                height: 40px;
+                // font-size: 15px;
+                height: 3rem;
                 display: -webkit-box;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -107,6 +125,6 @@
 
 @media screen and (max-width: 320px) {
     .school-intro .school-card p {
-        font-size: 14px;
+        // font-size: 14px;
     }
 }

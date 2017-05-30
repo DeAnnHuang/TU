@@ -139,7 +139,7 @@ gulp.task('watch', function() {
     gulp.watch('assets/Library/*.js', ['libraryJS']);
     gulp.watch('assets/js/**/*.js', ['scripts']);
     gulp.watch('assets/sass/*.scss', ['styles']);
-    gulp.watch(['./*.html', './build/**/*'], ['zip']);
+    // gulp.watch(['./*.html', './build/**/*'], ['zip']);
 });
 
 gulp.task('default', ['html', 'scripts', 'libraryJS', 'styles', 'imgmin', 'Library', 'watch']);
