@@ -6,7 +6,7 @@
         .row {
             margin: 0;
             .department {
-                img{
+                img {
                     width: 200px;
                 }
                 a {
@@ -46,6 +46,8 @@
                     }
                     .text-group {
                         width: 40vw;
+                        overflow: hidden;
+                        height: 7rem;
                         p {
                             font-size: 12px;
                         }
